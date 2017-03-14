@@ -12,6 +12,9 @@
 		4B1AEEEA1E7807FD00ACD2F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B1AEEE81E7807FD00ACD2F1 /* Main.storyboard */; };
 		4B1AEEEC1E7807FD00ACD2F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B1AEEEB1E7807FD00ACD2F1 /* Assets.xcassets */; };
 		4B1AEEEF1E7807FD00ACD2F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B1AEEED1E7807FD00ACD2F1 /* LaunchScreen.storyboard */; };
+		4B1AEEFA1E78185700ACD2F1 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1AEEF91E78185700ACD2F1 /* RoundButton.swift */; };
+		4B1AEEFC1E781F0400ACD2F1 /* ParkingSpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1AEEFB1E781F0400ACD2F1 /* ParkingSpot.swift */; };
+		4B1AEEFF1E78286400ACD2F1 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1AEEFE1E78286400ACD2F1 /* LocationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		4B1AEEEB1E7807FD00ACD2F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B1AEEEE1E7807FD00ACD2F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B1AEEF01E7807FD00ACD2F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B1AEEF91E78185700ACD2F1 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		4B1AEEFB1E781F0400ACD2F1 /* ParkingSpot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingSpot.swift; sourceTree = "<group>"; };
+		4B1AEEFE1E78286400ACD2F1 /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,10 @@
 		4B1AEEE31E7807FD00ACD2F1 /* ParkingApp */ = {
 			isa = PBXGroup;
 			children = (
+				4B1AEEFD1E78281E00ACD2F1 /* Services */,
+				4B1AEEF81E78150500ACD2F1 /* View */,
+				4B1AEEF71E7814FE00ACD2F1 /* Model */,
+				4B1AEEF61E7814A600ACD2F1 /* Controller */,
 				4B1AEEE41E7807FD00ACD2F1 /* AppDelegate.swift */,
 				4B1AEEE61E7807FD00ACD2F1 /* ViewController.swift */,
 				4B1AEEE81E7807FD00ACD2F1 /* Main.storyboard */,
@@ -62,6 +72,37 @@
 				4B1AEEF01E7807FD00ACD2F1 /* Info.plist */,
 			);
 			path = ParkingApp;
+			sourceTree = "<group>";
+		};
+		4B1AEEF61E7814A600ACD2F1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4B1AEEF71E7814FE00ACD2F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B1AEEFB1E781F0400ACD2F1 /* ParkingSpot.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4B1AEEF81E78150500ACD2F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B1AEEF91E78185700ACD2F1 /* RoundButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4B1AEEFD1E78281E00ACD2F1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4B1AEEFE1E78286400ACD2F1 /* LocationService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +178,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B1AEEFA1E78185700ACD2F1 /* RoundButton.swift in Sources */,
 				4B1AEEE71E7807FD00ACD2F1 /* ViewController.swift in Sources */,
+				4B1AEEFF1E78286400ACD2F1 /* LocationService.swift in Sources */,
+				4B1AEEFC1E781F0400ACD2F1 /* ParkingSpot.swift in Sources */,
 				4B1AEEE51E7807FD00ACD2F1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
