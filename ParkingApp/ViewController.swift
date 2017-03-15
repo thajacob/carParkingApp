@@ -90,15 +90,16 @@ extension ViewController: MKMapViewDelegate {
             } else {
                 return nil
             }
-            func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTappedcontrol: UIControl) {
-                
-                let location = view.annotation as! ParkingSpot
-                let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking]
-                location.mapItem(location: (parkedCarAnnotation?.coordinate)!).openInMaps(launchOptions:launchOptions)
-                
-            }
-                
-            }
+      }
+
+     @objc(mapView:annotationView:calloutAccessoryControlTapped:) func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped calloutAccessoryControlTappedcontrol: UIControl) {
+        
+        let location = view.annotation as! ParkingSpot
+        let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking]
+        location.mapItem(location: (parkedCarAnnotation?.coordinate)!).openInMaps(launchOptions:launchOptions)
+    }
+
+    
     
 }
     extension ViewController: CLLocationManagerDelegate{
