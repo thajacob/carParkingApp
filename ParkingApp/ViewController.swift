@@ -94,9 +94,26 @@ extension ViewController: MKMapViewDelegate {
 
      @objc(mapView:annotationView:calloutAccessoryControlTapped:) func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped calloutAccessoryControlTappedcontrol: UIControl) {
         
-        let location = view.annotation as! ParkingSpot
+        
+        
+       // let location = view.annotation as! ParkingSpot
         let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking]
-        location.mapItem(location: (parkedCarAnnotation?.coordinate)!).openInMaps(launchOptions:launchOptions)
+        let url = URL(string: "comgooglemaps://?center=40.765819,-73.975866&zoom=14&views=traffic")! 
+        
+        if (UIApplication.shared.canOpenURL(URL(string:"comgooglemaps://")!)) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            print("Can't use comgooglemaps://");
+        }
+        
+        
+       // location.mapItem(location: (parkedCarAnnotation?.coordinate)!).openInMaps(launchOptions:launchOptions)
+        
+        
+        
+        
+        
+        
     }
 
     
